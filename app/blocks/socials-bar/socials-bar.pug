@@ -1,0 +1,35 @@
+mixin socials-bar(cls)
+	.socials-bar(class=cls)
+		.container
+			a.btn(href="#") Читать далее
+			a.btn.btn-icon.hidden-mobile(href="#")
+				span
+					img(src="img/icon-boockmark.png")
+					|6
+				p В закладки
+			a.btn.btn-icon(href="#")
+				span
+					img(src="img/icon-like.png")
+					|12
+				p Мне нравится
+			a.btn.btn-icon.hidden-mobile(href="#")
+				span
+					img(src="img/icon-apple.png")
+				p App Store
+			a.btn.btn-icon.hidden-mobile(href="#")
+				span
+					img(src="img/icon-android.png")
+				p Google Play
+			a.btn.btn-icon(href="#")
+				span
+					img(src="img/icon-link.png")
+				p Поделиться
+			.social-links
+				a(href="#")
+					i.fa.fa-vk
+				a(href="#")
+					i.fa.fa-facebook
+				a(href="#")
+					i.fa.fa-twitter
+				a(href="#")
+					i.fa.fa-odnoklassniki

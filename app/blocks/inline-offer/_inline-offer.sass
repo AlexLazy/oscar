@@ -1,0 +1,50 @@
+.inline-offer
+  padding-top: rem(110)
+  padding-bottom: rem(180)
+  background-size: cover
+  &.counter
+    padding-top: rem(80)
+    padding-bottom: rem(70)
+  &-feedback
+    padding-bottom: rem(75)
+    .btn
+      margin-left: auto
+      margin-right: auto
+      margin-top: rem(50)
+      padding-left: rem(35)
+      padding-right: rem(35)
+  .container
+    justify-content: space-around
+  h2
+    color: #fff
+    font-size: rem(48)
+    letter-spacing: 0
+    text-align: center
+  &__counter-item
+    width: calc(25% - 90px)
+    margin-top: rem(50)
+    text-align: center
+    span,
+    p
+      color: #fff
+      font-weight: 300
+    span
+      font-size: rem(60)
+    p
+      margin-top: rem(5)
+      font-size: rem(16)
+  .descr
+    margin-top: rem(35)
+    text-align: center
+    color: #fff
+    font-weight: 300
+
+
+@media (max-width: 991px)
+  .inline-offer
+    &__counter-item
+      width: calc(50% - 90px)
+@media (max-width: 575px)
+  .inline-offer
+    &__counter-item
+      width: 100%

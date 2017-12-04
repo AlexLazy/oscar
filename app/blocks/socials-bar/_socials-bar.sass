@@ -1,0 +1,50 @@
+.socials-bar
+  margin-top: rem(20)
+  margin-bottom: rem(90)
+  .container
+    justify-content: space-between
+    align-items: center
+  .btn:not(.btn-icon)
+    padding-left: rem(25)
+    padding-right: rem(25)
+  .social-links
+    a
+      margin-left: rem(5)
+      color: #000
+      font-size: rem(18)
+      transition: 300ms color
+      &:hover
+        color: #8d9aa7
+
+
+@media only screen and (max-width : 1199px)
+  .socials-bar
+    .container
+      justify-content: flex-start
+    a
+      margin-bottom: rem(20)
+      margin-right: rem(15)
+@media (max-width: 575px)
+  .socials-bar
+    .container
+      justify-content: space-around
+    .btn
+      width: calc(50% - 20px)
+      margin-right: 0
+      text-align: center
+      p
+        margin: auto
+    .social-links
+      width: 100%
+      text-align: center
+@media (max-width: 500px)
+  .socials-bar
+    .container
+      display: block
+      text-align: center
+    .btn
+      width: rem(220)
+      margin-left: auto
+      margin-right: auto
+      &.hidden-mobile
+        display: none

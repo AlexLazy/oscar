@@ -1,0 +1,56 @@
+.form-to-call
+  padding-top: rem(60)
+  padding-bottom: rem(80)
+  background-size: cover
+  &-event
+    padding-bottom: rem(170)
+    .section-header
+      h2
+        margin-top: rem(40)
+        margin-bottom: rem(30)
+      p
+        max-width: rem(790)
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: rem(30)
+        color: #000
+        letter-spacing: 0
+      .btn
+        padding-left: rem(50) !important
+        padding-right: rem(50) !important
+  .container
+    flex-direction: column
+    align-items: center
+    padding-bottom: rem(70)
+    background-color: #fff
+    box-shadow: 0px 22px 39.69px 9.31px rgba(21, 31, 65, 0.35)
+  .row
+    justify-content: space-between
+    max-width: rem(600)
+  h2
+    margin-top: rem(55)
+    margin-bottom: rem(20)
+    text-align: center
+    letter-spacing: rem(-1.2)
+    &:not(:first-of-type)
+      margin-top: rem(75)
+  p
+    max-width: rem(700)
+    margin-bottom: rem(50)
+    text-align: center
+    color: #656565
+    font-size: rem(14)
+  .btn:not(.btn-underline)
+    padding-left: rem(25)
+    padding-right: rem(25)
+    letter-spacing: rem(-1)
+
+
+@media (max-width: 575px)
+  .form-to-call
+    padding: 0
+    &-event
+      padding-bottom: rem(170)
+    .row
+      flex-direction: column
+      align-items: center

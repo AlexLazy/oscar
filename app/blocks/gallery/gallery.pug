@@ -1,0 +1,13 @@
+block gallery
+	section.gallery
+		.container
+			.row.links
+				a.btn.btn-underline(href="#") Выбрать сертификат
+				a.btn.btn-underline(href="#") Заказать сертификат
+				a.btn.btn-underline(href="#") Быстрая оплата
+			.row
+				each i in [1,2,3,4,5,6,7,8,9]
+					a(href="img/gallery-taber"+i+".jpg" data-fancybox="gallery").item
+						img(src="img/gallery-taber"+i+".jpg")
+						.overlay
+							p= 'Подарок ' + i

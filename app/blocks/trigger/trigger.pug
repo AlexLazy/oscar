@@ -1,0 +1,6 @@
+mixin trigger(img, descr1, descr2)
+	.trigger
+		img(src="img/"+img+".png")
+		if descr2
+			span!=descr2
+		p!=descr1

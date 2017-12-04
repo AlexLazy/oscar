@@ -1,0 +1,24 @@
+block inline-form
+	section.inline-form(style="background-image: url(img/inline-form-bg.jpg)")
+		.container
+			header.section-header
+				h2 Оставьте свой отзыв
+				p
+					|Задача организации, в особенности же рамки и место обучения кадров способствует подготовки и
+					br
+					|реализации систем массового участия. Идейные соображения высшего порядка.
+			form
+				.col
+					input(type="text" placeholder="Ваше Имя")
+				.col
+					input(type="email" placeholder="Email")
+				.col
+					input(type="tel" placeholder="Телефон")
+				.col.large
+					textarea(placeholder="Напишите несколько слов о салоне")
+				.approval
+					.checkbox
+						input#approval-chb(type="checkbox" checked)
+						label(for="approval-chb")
+					p Я осознаю, что, нажимая кнопку «Отправить» , я даю свое согласие на обработку моих персональных данных
+				input.btn(type="submit" value="Отправить")

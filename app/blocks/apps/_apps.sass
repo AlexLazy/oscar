@@ -1,0 +1,74 @@
+.apps
+  padding-top: rem(190)
+  padding-bottom: rem(200)
+  background-size: cover
+  background-position: center
+  .container
+    justify-content: flex-end
+  article
+    max-width: rem(720)
+    h2
+      margin-bottom: rem(30)
+      color: #1b1b1b
+      font-family: "OpenSans"
+      font-size: rem(48)
+      line-height: rem(56)
+      letter-spacing: rem(-1.7)
+      font-weight: 300
+    p
+      color: #555555
+      font-family: "Roboto"
+      font-size: rem(18)
+      font-weight: 200
+      &:first-of-type
+        font-size: rem(21)
+      &:last-of-type
+        margin-top: rem(50)
+        font-family: "OpenSans"
+        font-size: rem(24)
+        letter-spacing: rem(-.6)
+    ul
+      margin-top: rem(35)
+      margin-bottom: rem(40)
+      margin-left: rem(30)
+      list-style: none
+      li
+        position: relative
+        color: #555555
+        font-family: "Roboto"
+        font-size: rem(21)
+        font-weight: 200
+        &::before
+          content: ''
+          position: absolute
+          top: rem(10)
+          left: rem(-24)
+          width: rem(4)
+          height: rem(4)
+          border-radius: 50%
+          border: rem(3) solid #0054a6
+    a
+      margin-top: rem(30)
+      margin-right: rem(20)
+
+
+@media (max-width: 575px)
+  .apps
+    padding-top: rem(30)
+    padding-bottom: rem(50)
+    background-position: right
+    article
+      h2
+        font-size: rem(36)
+        line-height: rem(44)
+      p
+        &:last-of-type
+          line-height: rem(30)
+      a
+        display: block
+        width: rem(173)
+        margin-top: rem(15)
+        margin-left: auto
+        margin-right: auto
+        &:first-of-type
+          margin-top: rem(40)

@@ -1,0 +1,239 @@
+#main
+  position: relative
+  background-size: cover
+  background-position: center
+  .main-header
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 200
+  #main-slider
+    .owl-carousel
+      .item
+        width: 100%
+        height: 100vh
+        background-size: cover
+        background-position: center bottom
+      .owl-nav
+        position: absolute
+        top: calc(50% + 40px)
+        right: rem(90)
+        transition: 300ms
+        z-index: 100
+        .owl-prev,
+        .owl-next
+          position: relative
+          display: inline-block
+          width: rem(50)
+          height: rem(25)
+          margin-left: rem(40)
+          transition: 300ms opacity
+          &::before,
+          &::after
+            content: ''
+            position: absolute
+            left: 50%
+            background-color: #fff
+            width: rem(32)
+            height: rem(9)
+          &::before
+            top: 0
+            transform: rotate(-45deg)
+          &::after
+            bottom: 0
+            transform: rotate(45deg)
+          &:hover
+            opacity: .8
+        .owl-next
+          transform: rotateZ(180deg)
+    .item
+      position: relative
+      .container-large
+        justify-content: flex-end
+      .offer
+        max-width: rem(650)
+        margin-top: rem(240)
+        opacity: 0
+        h2
+          margin-bottom: rem(20)
+          color: #fff
+          font-family: "RobotoSlab"
+          font-size: rem(46)
+          line-height: rem(68)
+          letter-spacing: rem(-2)
+          font-weight: 400
+          text-decoration: underline
+        p
+          color: #fff
+          font-family: "Roboto"
+          font-size: rem(18)
+    .owl-item.active
+      .offer
+        opacity: 1
+  .footer
+    position: fixed
+    left: 0
+    bottom: 0
+    width: 100%
+    padding: 0
+    color: #fff
+    z-index: 5
+    &__container
+      display: flex
+      max-width: rem(1380)
+      margin-left: auto
+      margin-right: auto
+      padding-left: rem(15)
+      padding-right: rem(15)
+    .col
+      position: relative
+      width: 60%
+      animation-name: fadeIn-left-bottom
+      animation-timing-function: ease-out
+      animation-duration: 2s
+      &:last-child
+        width: 40%
+        padding-left: rem(115)
+        animation-name: fadeIn-right-bottom
+    &__menu-top,
+    &__menu-bottom
+      max-width: rem(690)
+      a
+        margin-right: rem(57)
+        color: #fff
+        font-size: rem(18)
+        line-height: rem(22)
+        border-bottom: rem(1) solid
+        transition: 300ms border-bottom-color
+        &:hover
+          border-bottom-color: transparent
+    &__menu-top
+      margin-bottom: rem(30)
+      a
+        font-weight: 900
+        text-transform: uppercase
+    &__menu-bottom
+      margin-bottom: rem(130)
+      a
+        margin-bottom: rem(15)
+        font-weight: 200
+    .social
+      max-width: rem(350)
+      margin-bottom: rem(35)
+      margin-right: rem(90)
+      a
+        margin-bottom: rem(10)
+        margin-right: rem(5)
+        border-radius: 50%
+        color: #000
+        transition: 300ms opacity
+        &:hover
+          opacity: .7
+    .copyright
+      color: #fff
+      font-family: "Roboto"
+      font-size: rem(18)
+      font-weight: 200
+  h1
+    position: fixed
+    bottom: rem(325)
+    left: calc(50% - 675px)
+    color: #fff
+    font-size: rem(72)
+    line-height: rem(54)
+    letter-spacing: rem(-1)
+    font-weight: 600
+    z-index: 100
+    span
+      display: block
+      margin-left: rem(3)
+      font-size: rem(25)
+      letter-spacing: rem(.6)
+      font-weight: 400
+
+
+@media only screen and (max-height : 720px) and (min-width : 1470px)
+  #main
+    & > h1
+      display: none
+    .footer
+      .social
+        display: none
+    .col
+      &:last-child
+        display: flex
+        align-items: flex-end
+    #main-slider
+      .owl-carousel
+        .owl-nav
+          display: none
+@media only screen and (max-width : 1470px)
+  .main-header
+    & > .container-large
+      flex-wrap: nowrap
+      #bottom-menu,
+      #switcher
+        display: none
+    .contacts
+      flex-direction: column
+      align-items: flex-end
+      a + a
+        margin-top: rem(10)
+  #main
+    & > h1
+      position: initial
+      margin-left: rem(15)
+      margin-bottom: rem(30)
+    #main-slider
+      margin-bottom: rem(80)
+      .owl-carousel
+        .owl-nav
+          position: initial
+          margin-top: rem(30)
+        .item
+          height: auto
+          background-image: none!important
+          .container-large
+            justify-content: flex-start
+    .section:not(:first-child)
+      display: none
+    .footer
+      position: relative
+      .col
+        &:last-child
+          padding-left: 0
+@media screen and (max-width : 1199px)
+  #main
+    .footer
+      &__container
+        flex-wrap: wrap
+        .col
+          width: 100%!important
+      &__menu-bottom
+        margin-bottom: rem(30)
+@media (max-width: 991px)
+  #top-menu
+    display: none
+  #main
+    .footer__menu-top
+      margin-bottom: rem(20)
+      a
+        margin-bottom: rem(10)
+    .footer
+      .social
+        margin-right: 0
+@media (max-width: 575px)
+  .main-header
+    .top-menu_btn
+      margin-right: rem(20)
+  #main
+    #main-slider
+      .item
+        .offer
+          h2
+            font-size: rem(32)
+            line-height: rem(36)
+@media only screen and (min-width : 1470px)
+  #main
+    background-image: none!important

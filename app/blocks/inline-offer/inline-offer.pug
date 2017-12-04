@@ -1,0 +1,33 @@
+mixin inline-offer(bg, header, descr)
+	if attributes.counter
+		.inline-offer.counter(style="background-image:url(img/"+bg+")")
+			.container
+				.row.jcc
+					h2= header
+				if attributes.counter
+					.inline-offer__counter-item
+						span.counter 384
+						p Задача организации, в особенности же рамки и место обучения кадров способствует подготовки
+					.inline-offer__counter-item
+						span.counter 1809
+						p Задача организации, в особенности же рамки и место обучения
+					.inline-offer__counter-item
+						span.counter 249
+						p Задача организации, в особенности же рамки и место обучения
+					.inline-offer__counter-item
+						span.counter 175
+						p Задача организации, в особенности же рамки и место обучения
+	else if descr && !attributes.btn
+		.inline-offer(style="background-image:url(img/"+bg+")")
+			.container
+				.row.jcc
+					h2= header
+				p.descr!= descr
+	else if attributes.btn
+		.inline-offer.inline-offer-feedback(style="background-image:url(img/"+bg+")")
+			.container
+				.row.jcc
+					h2= header
+				p.descr!= descr
+				.row
+					a.btn(href="#") Читать далее

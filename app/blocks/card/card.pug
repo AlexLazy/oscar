@@ -1,0 +1,9 @@
+mixin card(img, header, list, cls)
+	article.card(class=cls)
+		img(src="img/"+img)
+		h2=header
+		if (list)
+			ul
+				for li in list
+					li=li
+		a.btn(href="#") Подробнее

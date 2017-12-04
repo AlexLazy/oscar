@@ -1,0 +1,57 @@
+block location-map
+	.location-map
+		.container
+			ul.tabs-menu
+				li
+					img(src="img/icon-car.png")
+					a.btn-underline.active(href="#location-map-tab-1" data-container="location-map-tabs") На автомобиле
+				li
+					img(src="img/icon-subway.png")
+					a.btn-underline(href="#location-map-tab-2" data-container="location-map-tabs") На метро
+			#location-map-tabs
+				#location-map-tab-1.tab-content(style="display:block")
+					.row
+						.col
+							article
+								h6 Как приехать в салон “Маяк” на машине?
+								p Задача организации, в особенности же рамки и место обучения кадров способствует подготовки и реализации систем массового участия. Идейные соображения высшего порядка.
+								.locations-img
+									a(href="img/loc1.jpg" data-fancybox="location-map-tab-1")
+										img(src="img/loc1.jpg")
+									a(href="img/loc2.jpg" data-fancybox="location-map-tab-1")
+										img(src="img/loc2.jpg")
+						.col
+							img.map(src="img/map.jpg")
+					.row
+						.col
+							article
+								h6 Московский салон красоты Маяк - это профессионализм персонала и широкий спектр услуг для красоты и здоровья
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+						.col
+							.video-wrap
+								img(src="img/video.jpg")
+								.overlay
+									img(src="data:image/png;base64,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")
+				#location-map-tab-2.tab-content
+					.row
+						.col
+							article
+								h6 Как приехать в салон “Маяк” на машине?
+								p Задача организации, в особенности же рамки и место обучения кадров способствует подготовки и реализации систем массового участия. Идейные соображения высшего порядка.
+								.locations-img
+									a(href="img/loc1.jpg" data-fancybox="location-map-tab-1")
+										img(src="img/loc1.jpg")
+									a(href="img/loc2.jpg" data-fancybox="location-map-tab-1")
+										img(src="img/loc2.jpg")
+						.col
+							img.map(src="img/map.jpg")
+					.row
+						.col
+							article
+								h6 Московский салон красоты Маяк - это профессионализм персонала и широкий спектр услуг для красоты и здоровья
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+						.col
+							.video-wrap
+								img(src="img/video.jpg")
+								.overlay
+									img(src="data:image/png;base64,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")

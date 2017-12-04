@@ -1,0 +1,71 @@
+#footer
+  padding-top: 30px
+  padding-bottom: rem(25)
+  background-color: #162433
+  .row
+    justify-content: space-between
+    align-items: center
+  .logo
+    display: flex
+    align-items: center
+    img
+      margin-right: 15px
+    p
+      color: #fff
+      font-family: "Cambria"
+      font-size: rem(24)
+      span
+        display: block
+        font-size: rem(14)
+        font-style: italic
+  .contacts
+    display: flex
+    align-items: center
+    p
+      margin-right: 40px
+      color: #8493a4
+      font-size: rem(12)
+    a
+      margin-left: 10px
+      i
+        color: $base
+        font-size: rem(18)
+        transition: 300ms color
+        &:hover
+          color: $accent
+  nav
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    width: calc(100% + 60px)
+    margin-top: 25px
+    margin-left: -15px
+    margin-right: -15px
+    a
+      padding-left: 15px
+      padding-right: 15px
+      margin-bottom: 10px
+      color: #fff
+      font-size: rem(12)
+      transition: 300ms
+      &:hover
+        color: $accent
+
+
+@media (max-width: 767px)
+  #footer
+    .row
+      flex-wrap: wrap
+    .logo
+      width: 100%
+      margin-bottom: 20px
+@media (max-width: 575px)
+  .map
+    .map-container
+      address
+        padding-left: rem(15)
+        padding-right: rem(15)
+        .col
+          width: 100%
+          &:first-child
+            display: none

@@ -1,0 +1,261 @@
+.home
+  .main-header
+    .top-menu_btn
+      align-self: flex-end
+.main-header
+  animation-name: fadeIn-top
+  animation-timing-function: ease-out
+  animation-duration: 2s
+  .container-large
+    position: relative
+    align-items: center
+    padding-top: rem(25)
+    padding-bottom: rem(30)
+    &::after
+      content: ''
+      position: absolute
+      left: rem(15)
+      bottom: 0
+      width: calc(100% - 30px)
+      height: rem(1)
+      background-color: rgba(255,255,255,.4)
+  .top-menu_btn
+    align-self: center
+    margin-right: rem(110)
+    .dropdown-btn,
+    .search
+      cursor: pointer
+      transition: 300ms opacity
+      &:hover
+        opacity: .8
+      &:focus
+        outline: none
+    .search
+      display: block
+      width: rem(25)
+      height: rem(25)
+      margin-top: rem(20)
+      cursor: pointer
+      background-color: transparent
+      background-image: url(../img/search.png)
+      border: none
+  #switcher
+    margin-right: rem(55)
+    a
+      display: block
+      padding: rem(17) rem(40)
+      border-radius: rem(40)
+      color: #fff
+      font-size: rem(14)
+      font-weight: 900
+      text-transform: uppercase
+      user-select: none
+      transition: 300ms
+      &:hover,
+      &.active
+        color: $accent
+      &.active
+        background-color: #fff
+      &+a
+        margin-top: rem(5)
+  #top-menu,
+  #bottom-menu
+     ul
+       list-style: none
+       li
+         display: inline-block
+         a
+           color: #fff
+           font-weight: 300
+           user-select: none
+           transition: 300ms opacity
+           &:hover
+             opacity: .8
+  #top-menu
+     ul
+       li
+         margin-right: rem(60)
+         a
+           font-size: rem(24)
+           letter-spacing: rem(-.8)
+  #bottom-menu
+    margin-top: rem(25)
+    margin-bottom: rem(-10)
+    margin-left: rem(180)
+    ul
+      li
+        margin-right: rem(40)
+        a
+          font-size: rem(18)
+  .contacts
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    width: rem(290)
+    margin-left: auto
+    a
+      color: #fff
+      line-height: rem(20)
+      font-weight: 300
+      border-bottom: rem(1) solid
+      transition: 300ms border-bottom-color
+      &:hover
+        border-bottom-color: transparent
+      &.phone
+        margin-left: rem(25)
+        font-size: rem(24)
+        letter-spacing: rem(-.8)
+        font-weight: 900
+        border-bottom: none
+      &:last-child
+        margin-top: rem(22)
+  #dropdown_menu
+    position: fixed
+    top: -300%
+    left: 0
+    width: 100%
+    height: 100%
+    padding-top: rem(30)
+    background-color: rgba(85,80,154,.95)
+    overflow-y: scroll
+    transition: 300ms top ease-out
+    z-index: 9999
+    &.on
+      top: 0
+    .top-menu_btn
+      align-self: initial
+      margin-top: rem(15)
+      margin-bottom: rem(15)
+    .container-large
+      &:last-of-type
+        &::after
+          display: none
+    .wrapper
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      max-width: rem(820)
+    h1
+      position: initial
+      color: #fff
+      font-size: rem(72)
+      line-height: rem(54)
+      letter-spacing: rem(-1)
+      font-weight: 600
+      z-index: 100
+      span
+        display: block
+        margin-left: rem(3)
+        font-family: "RobotoSlab"
+        font-size: rem(18)
+        letter-spacing: rem(-.4)
+        font-weight: 400
+    .tabs-menu
+      @extend #switcher
+      margin-left: rem(80)
+      margin-right: 0
+      a
+        display: inline-block
+    .close
+      position: relative
+      width: rem(30)
+      height: rem(30)
+      padding: 0
+      margin-left: auto
+      background-color: transparent
+      border: none
+      cursor: pointer
+      transition: 300ms opacity
+      &::before,
+      &::after
+        content: ''
+        position: absolute
+        top: calc(50% - 3px)
+        left: 0
+        width: rem(30)
+        height: rem(6)
+        background-color: #fff
+      &::before
+        transform: rotate(45deg)
+      &::after
+        transform: rotate(-45deg)
+      &:hover
+        opacity: .8
+      &:focus
+        outline: none
+    form
+      min-width: rem(250)
+      width: 68%
+      margin-top: rem(13)
+      margin-bottom: rem(10)
+      input
+        width: 100%
+        padding: rem(16) rem(20)
+        background-color: transparent
+        border: rem(1) solid rgba(255,255,255,.4)
+        background-image: url(../img/search.png)
+        background-repeat: no-repeat
+        background-position: 25px 17px
+        text-indent: rem(40)
+        color: #fff
+        font-size: rem(24)
+        transition: 300ms
+        &:focus
+          outline: none
+          background-color: rgba(0,0,0,.1)
+    h2
+      margin-top: rem(20)
+      color: #fff
+      font-family: "RobotoSlab"
+      font-size: rem(46)
+      letter-spacing: rem(-1)
+      font-weight: 400
+    #search-container
+      width: 100%
+    #header-tabs
+      width: 100%
+    .links-wrapper
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      padding-top: rem(50)
+      ul
+        width: 25%
+        list-style: none
+        padding-right: rem(15)
+        li
+          margin-bottom: rem(30)
+        a
+          color: #fff
+          font-size: rem(24)
+          font-weight: 300
+
+
+@media (max-width: 991px)
+  .main-header
+    #dropdown_menu
+      .tabs-menu
+        width: 100%
+        margin-left: 0
+      .close
+        position: absolute
+        top: rem(30)
+        right: rem(30)
+      .links-wrapper
+        ul
+          width: 50%
+          margin-bottom: rem(50)
+@media (max-width: 575px)
+  .main-header
+    #dropdown_menu
+      h2
+        line-height: rem(36)
+      .tabs-menu
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+      form
+        width: 100%
+      .links-wrapper
+        ul
+          width: 100%

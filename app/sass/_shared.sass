@@ -1,0 +1,138 @@
+.container
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  max-width: rem(1170)
+  margin-left: auto
+  margin-right: auto
+  padding-left: rem(15)
+  padding-right: rem(15)
+
+.row
+  display: flex
+  width: 100%
+
+.hidden
+  display: none
+
+.tab-content
+  display: none
+
+.jcc
+  justify-content: center !important
+
+
+@keyframes fadeIn-top
+  0%
+    top: -100%
+    opacity: 0
+  100%
+    top: 0
+    opacity: 1
+
+@keyframes fadeIn-left-bottom
+  0%
+    bottom: rem(-50)
+    left: rem(-100)
+    opacity: 0
+  100%
+    bottom: 0
+    left: 0
+    opacity: 1
+
+@keyframes fadeIn-right-bottom
+  0%
+    bottom: rem(-50)
+    right: rem(-100)
+    opacity: 0
+  100%
+    bottom: 0
+    right: 0
+    opacity: 1
+
+h2
+  color: #000
+  font-family: "RobotoSlab"
+  font-size: rem(36)
+  line-height: rem(38)
+  letter-spacing: rem(-.8)
+  font-weight: 400
+  &.light
+    font-family: "OpenSans"
+    font-weight: 300
+//
+// h3
+//   color: $accent
+//   font-family: "GothamPro"
+//   font-size: rem(16)
+//   line-height: rem(34)
+//   letter-spacing: rem(2.2)
+//   font-weight: 900
+//   text-transform: uppercase
+
+.header-wrapper
+  width: 100%
+
+.ha
+  height: auto !important
+.pt0
+  padding-top: 0 !important
+.pt10
+  padding-top: rem(10) !important
+.mt50
+  margin-top: rem(50) !important
+.mb50
+  margin-bottom: rem(50) !important
+.mt130
+  margin-top: rem(130) !important
+
+.btn
+  position: relative
+  padding: 15px 70px
+  color: #1c2125
+  background-color: $base
+  outline: none
+  border: none
+  font-size: rem(18)
+  letter-spacing: rem(-.25)
+  transition: 300ms background-color
+  user-select: none
+  cursor: pointer
+  &:hover
+    background-color: lighten($base, 10%)
+  &:active
+    background-color: darken($base, 10%)
+  &:disabled
+    background-color: #ccc
+    cursor: not-allowed
+
+
+header.section-header
+  width: 100%
+  text-align: center
+  p
+    margin-top: rem(20)
+    letter-spacing: rem(-1)
+
+
+.owl-dots
+  position: absolute
+  top: rem(110)
+  right: rem(-40)
+  .owl-dot
+    width: rem(12)
+    height: rem(12)
+    margin-bottom: rem(10)
+    border-radius: 50%
+    border: rem(3) solid $accent
+    transition: 300ms border-width
+    &:hover,
+    &.active
+      border-width: rem(6)
+
+.services
+  background-color: #162433
+  .card
+    width: calc(25% - 15px)
+    &-large
+      width: calc(33.33333% - 15px)

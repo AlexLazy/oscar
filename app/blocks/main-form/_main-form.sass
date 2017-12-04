@@ -1,0 +1,37 @@
+form.main-form
+  display: flex
+  flex-direction: column
+  max-width: rem(380)
+  padding: rem(50) rem(50) rem(35)
+  background-color: rgba(52,181,74,.72)
+  text-align: center
+  header
+    margin-bottom: rem(30)
+    b
+      display: block
+      margin-bottom: rem(15)
+      color: #fff
+      font-family: "Roboto"
+      font-size: rem(18)
+      line-height: rem(22)
+      font-weight: 600
+  p
+    color: #fff
+    font-size: rem(14)
+    line-height: rem(18)
+  input:not(.btn)
+    margin-bottom: rem(10)
+    padding-top: rem(17)
+    padding-bottom: rem(17)
+    color: #0d0d0d
+    font-family: "Roboto"
+    font-size: rem(14)
+    font-weight: 600
+    text-align: center
+    border: none
+    transition: 300ms box-shadow
+    &:focus
+      outline: none
+      box-shadow: rem(2) rem(2) rem(10) rgba(0,0,0,.5)
+  footer
+    padding-top: rem(20)

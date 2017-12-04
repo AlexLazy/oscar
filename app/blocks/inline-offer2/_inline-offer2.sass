@@ -1,0 +1,67 @@
+.inline-offer2
+  padding-top: rem(100)
+  padding-bottom: rem(70)
+  background-repeat: no-repeat
+  background-position: center bottom
+  header
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 100%
+    margin-bottom: rem(100)
+    text-align: center
+    p
+      max-width: rem(620)
+      margin-top: rem(30)
+  .col
+    display: flex
+    flex-direction: column
+    width: 50%
+    &:last-child
+      .item
+        margin-left: auto
+        text-align: left
+        span
+          order: -1
+          margin-right: rem(50)
+          margin-left: 0
+    .item
+      display: flex
+      align-items: center
+      max-width: rem(340)
+      margin-bottom: rem(150)
+      text-align: right
+      span
+        display: flex
+        align-items: center
+        justify-content: center
+        min-width: rem(45)
+        height: rem(45)
+        margin-left: rem(50)
+        color: #fff
+        font-size: rem(14)
+        font-weight: 700
+        background-color: $accent
+        border-radius: 50%
+
+
+@media (max-width: 991px)
+  .inline-offer2
+    background-image: none !important
+    .col
+      align-items: center !important
+      .item
+        flex-direction: column
+        margin-left: 0 !important
+        margin-bottom: rem(40)
+        text-align: center !important
+        span
+          order: -1 !important
+          margin-left: 0
+          margin-right: 0 !important
+          margin-bottom: rem(20)
+@media (max-width: 767px)
+  .inline-offer2
+    .col
+      width: 100%

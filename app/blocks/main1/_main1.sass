@@ -1,0 +1,61 @@
+.not-found
+  background-size: cover
+  background-position: center
+  .container
+    flex-direction: column
+    align-items: center
+    padding-top: rem(100)
+    padding-bottom: rem(150)
+    color: #fff
+    h1
+      align-self: flex-start
+      font-size: rem(250)
+      line-height: rem(250)
+      letter-spacing: rem(-8)
+      font-weight: 300
+    p
+      align-self: flex-start
+      font-family: "RobotoSlab"
+      font-size: rem(46)
+      letter-spacing: rem(-2)
+    &>.btn
+      margin-top: rem(20)
+    form
+      margin-top: rem(30)
+      input[type="text"]
+        width: rem(520)
+        padding: rem(16)
+        text-indent: rem(15)
+        border: none
+        color: #0d0d0d
+        font-family: "Roboto"
+        font-size: rem(14)
+        font-weight: 400
+        transition: 300ms box-shadow
+        &:focus
+          outline: none
+          box-shadow: 0 0 rem(15) rgba(0,0,0,.3)
+      .btn
+        padding-left: rem(50)
+        padding-right: rem(50)
+
+
+@media only screen and (max-width : 1199px)
+  .not-found
+    .container
+      h1,
+      p
+        align-self: center
+        text-align: center
+@media (max-width: 767px)
+  .not-found
+    .container
+      h1
+        font-size: rem(180)
+      form
+        width: 100%
+        text-align: center
+        input[type="text"]
+          display: block
+          width: 100%
+          margin-bottom: rem(20)

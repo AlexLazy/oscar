@@ -1,0 +1,43 @@
+.certificates
+  padding-top: rem(90)
+  padding-bottom: rem(50)
+  .item
+    margin: rem(30)
+    text-align: center
+    a
+      position: relative
+      z-index: 1
+      &::before
+        content: ''
+        position: absolute
+        left: rem(-32)
+        top: rem(-32)
+        width: calc(100% + 70px)
+        height: calc(100% + 70px)
+        background-image: url(../img/cert-frame.png)
+        background-repeat: no-repeat
+        z-index: -1
+    p
+      margin-top: rem(65)
+      color: #1e1e1e
+      font-size: rem(16)
+
+
+@media only screen and (max-width : 1299px)
+  .certificates
+    padding-left: rem(50)
+    padding-right: rem(50)
+@media (max-width: 650px)
+  .certificates
+    padding-left: 0
+    padding-right: 0
+    .owl-dots
+      position: relative
+      top: initial
+      bottom: rem(10)
+      right: 0
+      text-align: center
+      .owl-dot
+        display: inline-block
+        margin-bottom: 0
+        margin-right: rem(5)

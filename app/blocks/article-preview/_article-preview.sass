@@ -1,0 +1,28 @@
+.article-preview
+  padding-top: rem(35)
+  padding-bottom: rem(35)
+  h2
+    margin-bottom: rem(20)
+    color: #000
+    font-family: "OpenSans"
+    font-size: rem(36)
+    line-height: rem(38)
+    letter-spacing: rem(-1)
+    font-weight: 300
+  .row
+    justify-content: space-between
+    .col
+      width: calc(50% - 10px)
+      p
+        font-size: rem(14)
+        line-height: rem(24)
+        letter-spacing: rem(.6)
+
+
+@media (max-width: 767px)
+  .article-preview
+    .row
+      flex-wrap: wrap
+      .col
+        width: 100%
+        margin-bottom: rem(20)

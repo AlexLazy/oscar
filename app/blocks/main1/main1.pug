@@ -1,0 +1,10 @@
+block main
+	main.not-found(style="background-image:url(img/404.jpg)")
+		include ../header/header1
+		.container
+			h1 404
+			p Упс! Что-то пошло не так
+			a.btn(href="/") Перейти на главную
+			form
+				input(type="text" placeholder="Поиск по сайту")
+				input.btn(type="submit" value="Найти")
